@@ -14,7 +14,7 @@
 
         function launchiOSApp(url) {
             iframe.src = url;
-            console.log(iframe.location.href);
+            console.log(iframe.contentWindow.location.href);
         }
 
         window.onload = function() {
