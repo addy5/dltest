@@ -1,0 +1,25 @@
+
+<iframe src="alt" id="appFrame" width="1px" height="1px"></iframe>
+
+<script type="text/javascript">
+
+    var appstoreFail = "https://www.instagram.com";
+
+    var iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+    var appUrlScheme = "instagram://";
+
+
+
+        var iframe = document.getElementById("appFrame");
+
+        function launchiOSApp(url) {
+            iframe.src = url;
+            console.log(iframe.location.href);
+        }
+
+        window.onload = function() {
+            launchiOSApp('instagram://');
+        }
+
+
+</script>
