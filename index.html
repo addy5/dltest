@@ -15,6 +15,7 @@
         function launchiOSApp(url) {
             iframe.src = url;
             setTimeout( function(){
+              console.log(iframe.src);
               console.log(iframe.contentWindow.location.href);
               // window.location = "https://www.instagram.com";
             }, 500);
